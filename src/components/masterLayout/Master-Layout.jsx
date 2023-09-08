@@ -11,7 +11,7 @@ import {
 import { BsHourglass, BsListNested } from "react-icons/bs";
 import logo from "../../assets/images/logo.svg";
 import { MdOutlineCancelPresentation, RiDashboardLine } from "react-icons/all";
-// import { RiPassPendingFill } from "react-icons/ri";
+
 import { getUserDetails, removeSessions } from "../../helper/SessionHelper";
 import "../../assets/CSS/sidebar.css";
 import "../../assets/CSS/dorpdownmenu.css";

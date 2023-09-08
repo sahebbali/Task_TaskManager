@@ -1,19 +1,18 @@
-import React, {Fragment, Suspense, lazy} from 'react'
-import MasterLayout from '../components/masterLayout/Master-Layout';
-import LazyLoader from '../components/masterLayout/LazyLoader';
+import React, { Fragment, Suspense, lazy } from "react";
+import MasterLayout from "../components/masterLayout/Master-Layout";
 
-const  Registration = lazy(()=> import ('../components/Registration/Registration'))
+const Registration = lazy(() =>
+  import("../components/Registration/Registration")
+);
 
 function RegistrationPage() {
   return (
     <Fragment>
-    <MasterLayout>
-      <Suspense fallback={<LazyLoader />}>
-         <Registration />
-      </Suspense>
-    </MasterLayout>
-  </Fragment>
-  )
+      <MasterLayout>
+        <Registration />
+      </MasterLayout>
+    </Fragment>
+  );
 }
 
-export default RegistrationPage
+export default RegistrationPage;

@@ -6,13 +6,13 @@ import { getTaskDetails } from "../../helper/SessionHelper";
 import { UpdateToDO } from "../../helper/UpdateAlert";
 import { useState } from "react";
 import { DeleteToDO } from "../../helper/DeleteAlert";
+
 const New = () => {
   const taskList = getTaskDetails();
   const [listData, setListData] = useState(taskList);
   const [searchStatus, setSearchStatus] = useState(""); // State for status search
   const [searchDueDate, setSearchDueDate] = useState("");
-  // Function to filter the list based on searchQuery
-  // Function to filter the list based on status and due date
+
   const filteredList = listData.filter((item) => {
     const statusMatch =
       item.status.toLowerCase().includes(searchStatus.toLowerCase()) ||
@@ -60,19 +60,6 @@ const New = () => {
         console.error("Update failed:", error.message);
       });
     window.location.reload();
-  };
-
-  const getStatusBackgroundColorClass = (status) => {
-    switch (status) {
-      case "Completed":
-        return "completed";
-      case "Pending":
-        return "pending";
-      case "Progress":
-        return "progress";
-      default:
-        return "";
-    }
   };
 
   return (

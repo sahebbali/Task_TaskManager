@@ -24,7 +24,7 @@ const Login = () => {
     } else {
       if (email === userEmail && pass === userPassword) {
         toast.success("Login successfull");
-        window.location.href = "/";
+        window.location.href = "/Create";
       } else {
         toast.error(" Please Give Vaild Email and Password ");
       }
