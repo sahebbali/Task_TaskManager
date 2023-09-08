@@ -13,8 +13,6 @@ const Dashboard = () => {
     <Fragment>
       <div className="container">
         <div className="row">
-          <h1> Hello Dashboard</h1>
-
           <div
             className="col-12 col-lg-5 col-sm-6 col-md-3  p-2 cursor-pointer"
             onClick={() => navigete("/AllTask")}
