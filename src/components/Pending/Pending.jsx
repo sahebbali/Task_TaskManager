@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from "react";
+import React, { Fragment } from "react";
 import { Container } from "react-bootstrap";
 import { AiOutlineCalendar, AiOutlineDelete } from "react-icons/all";
 import { AiOutlineEdit } from "react-icons/ai";

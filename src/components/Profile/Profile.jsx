@@ -1,9 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import {
-  GetProfileDetails,
-  ProfileUpdateRequest,
-} from "../../APIRequest/APIRequest";
-import { useSelector } from "react-redux";
+import React, {  useRef } from "react";
+
 import {
   ErrorToast,
   getBase64,
